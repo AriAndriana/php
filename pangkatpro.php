@@ -5,19 +5,21 @@ if(isset($_POST['input'])) {
     $number = 0;
     $number2 = 0;
     var_dump($angka);
-    foreach ($angka as $data => $a) {
-        echo "$data";
-        for($i = 0; $i < $a; $i++) {
-            echo "x$data";
+    for($x = 0; $x < count($angka); $x++ ) {
+        for($i = 1; $i <= $pangkat[$x]; $i++) {
+            echo $angka[$x];
+            if ($z < $pangkat[$x]) {
+                echo "x";
+            }
         }
-        echo " : ". pow($data, $a) . " ";
-        $x = pow($data, $a);
-        if ($a % 2 == 0) {
+        $hasil = pow($angka[$x], $pangkat[$x]);
+        echo " = ". $hasil ." -> ";
+        if ($hasil % 2 == 0) {
+            echo "Bilangan Ganjil";
+        } else {
             echo "Bilangan Genap";
         }
-        else{
-            echo "Bilangan Ganjil";
-        }
+        echo "<hr>";
     }
 }
 
