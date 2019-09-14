@@ -4,7 +4,6 @@ if(isset($_POST['input'])) {
     $pangkat = $_POST['pangkat'];
     $number = 0;
     $number2 = 0;
-    var_dump($angka);
     for($x = 0; $x < count($angka); $x++ ) {
         for($i = 1; $i <= $pangkat[$x]; $i++) {
             echo $angka[$x];
@@ -19,7 +18,7 @@ if(isset($_POST['input'])) {
         } else {
             echo "Bilangan Genap";
         }
-        echo "<hr>";
+        echo "<hr>"; 
     }
 }
 

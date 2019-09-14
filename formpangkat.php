@@ -17,7 +17,7 @@
                 </table>
             </form>
             <?php
-                if(isset($_GET['submit'])){
+                if (isset($_GET['submit'])) {
                     $angka = $_GET['angka'];
                     for($i = 0; $i < $angka; $i++){
             ?>  
