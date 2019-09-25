@@ -15,7 +15,7 @@ function lingkaran($phi ,$diameter , $rad){
     echo "Luas Lingkaran : ". $phi * $rad * $rad ." cm<hr>";
 }
 $phi = 3.14;
-$rad = 8;
+$rad = 4;
 $diameter = $rad * 2;
 lingkaran($phi ,$diameter , $rad);
 
