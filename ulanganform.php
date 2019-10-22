@@ -39,7 +39,7 @@
         <td><input type="submit" name="sbm" value="Simpan"></td>
         </tr>
         </form>
-             <form action="ulanganharianpro.php" method="post">
+             <form action="ulanganformpro.php" method="post">
     <?php
         if (isset($_POST['sbm'])) {
             $nama      = $_POST['nama'];
